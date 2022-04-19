@@ -39,13 +39,27 @@
 
 
 #作成と参照
-data <- data.frame(
-        "商品" = c("りんご", "たまご", "キャベツ"),
-        "値段" = c(100, 200, 300)
-)
+# data <- data.frame(
+#         "商品" = c("りんご", "たまご", "キャベツ"),
+#         "値段" = c(100, 200, 300)
+# )
 
-data[1,2]
+# data[1,2]
 # data
-
 # head(data)
 
+
+#外部データの読み込み方法
+# df <- read.csv("demodata.csv", header=T, row.names=1)
+# df
+# df[,1] #1列目のデータ
+# df[1,] #1行目のデータ
+
+
+
+#ヒストグラム
+# a <- rnorm(1000, 40, 10)
+# b <- rnorm(1000, 60, 10)
+
+# hist(a, breaks=seq(0,100,5), border="red", xlim=c(0,100), main="", xlab="")
+# hist(b, breaks=seq(0,100,5), border="blue", add=T)
