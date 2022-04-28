@@ -1,4 +1,6 @@
 #02_data.csvデータの読み込み
+#dataにCSVファイルの内容を代入。
+
 data <- read.csv("02_data.csv", header=T)
 
 #スコアとクラスの平均の算出
@@ -10,7 +12,7 @@ aggregate(score~department,data=data,FUN=mean)
 #学科×クラス別の平均値
 aggregate(score~department*class,data=data,FUN=mean)
 
-
+#*ここで、任意のheaderの名前に変更する必要がある。
 
 参考にしたサイト：
 #データフレーム ⇔ リスト の変換
