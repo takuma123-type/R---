@@ -50,8 +50,8 @@
 
 
 #外部データの読み込み方法
-# df <- read.csv("demodata.csv", header=T, row.names=1)
-# df
+df <- read.csv("02_data.csv", header=T, row.names=1)
+df
 # df[,1] #1列目のデータ
 # df[1,] #1行目のデータ
 
@@ -62,4 +62,9 @@
 # b <- rnorm(1000, 60, 10)
 
 # hist(a, breaks=seq(0,100,5), border="red", xlim=c(0,100), main="", xlab="")
-# hist(b, breaks=seq(0,100,5), border="blue", add=T)
+# hist(b, breaks=seq(0,100,5), border="blue", add= T)
+
+#スコアとクラスの平均の算出
+aggregate(score~class,data=data,FUN=mean)
+#スコアと学科名の平均の算出
+aggregate(score~department,data=data,FUN=mean)
