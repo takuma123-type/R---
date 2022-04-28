@@ -14,10 +14,10 @@ aggregate(score~department*class,data=data,FUN=mean)
 
 参考にしたサイト：
 #データフレーム ⇔ リスト の変換
-URL:https://qiita.com/U25CE/items/bf30ea2fcc79ba399dd0
+#URL:https://qiita.com/U25CE/items/bf30ea2fcc79ba399dd0
 
 #Rコード:データフレームのグループごと（セルごと）の平均を出す。
-URL:https://toukei.link/programmingandsoftware/r/aggregatefunction/
+#URL:https://toukei.link/programmingandsoftware/r/aggregatefunction/
 
 #ベクトルの作成
-URL:http://cse.naro.affrc.go.jp/takezawa/r-tips/r/12.html
+#URL:http://cse.naro.affrc.go.jp/takezawa/r-tips/r/12.html
