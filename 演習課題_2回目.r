@@ -12,9 +12,9 @@ aggregate(score~department,data=data,FUN=mean)
 #学科×クラス別の平均値
 aggregate(score~department*class,data=data,FUN=mean)
 
-#*ここで、任意のheaderの名前に変更する必要がある。
+#*注意事項*ここで、任意のheaderの名前に変更する必要がある。
 
-参考にしたサイト：
+#参考にしたサイト：
 #データフレーム ⇔ リスト の変換
 #URL:https://qiita.com/U25CE/items/bf30ea2fcc79ba399dd0
 
